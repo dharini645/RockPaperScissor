@@ -41,7 +41,7 @@ A simple and fun **Rock Paper Scissors** game built using HTML, CSS, and JavaScr
 ---
 
 ## 📁 Folder Structure
-RPS/
+RockPaperScissor/
 │
 ├── index.html
 ├── style.css
