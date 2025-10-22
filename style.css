@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    text-align: center;
+    color: white;
+    width: 400px;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.score p:first-child {
+    font-weight: bold;
+}
+
+#matchMessage {
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 10px;
+    min-height: 24px; 
+    text-align: center;
+}
+
+#choices {
+    margin-bottom: 20px;
+}
+
+#choices button {
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#choices button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Round History */
+#history-container {
+    text-align: left;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+#history-container h3 {
+    margin-bottom: 10px;
+}
+
+#historyList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#historyList li {
+    background: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@media(max-width: 450px){
+    #container { width: 90%; }
+    #choices button { padding: 10px; font-size: 16px; }
+}
